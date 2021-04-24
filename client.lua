@@ -31,7 +31,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 		
-		local rcdDistance = GetDistanceBetweenCoords(coords, Config.rcdCoords.rcdNPC.coords, true)
+		local kypzDistance = GetDistanceBetweenCoords(coords, Config.kypzCoords.kypzNPC.coords, true)
 		
 		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'police' then
 			local playerPed = PlayerPedId()
@@ -62,7 +62,7 @@ end)
 -- Lester Ped
 Citizen.CreateThread(function()
     local ped_hash = 0xB8CC92B4
-    local ped_coords = Config.rcdCoords.rcdNPC.coords
+    local ped_coords = Config.kypzCoords.kypzNPC.coords
 
     RequestModel(ped_hash)
     while not HasModelLoaded(ped_hash) do
