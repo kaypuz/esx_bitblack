@@ -33,7 +33,7 @@ Citizen.CreateThread(function()
 		
 		local kypzDistance = GetDistanceBetweenCoords(coords, Config.kypzCoords.kypzNPC.coords, true)
 		
-		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'police' then
+		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'Meslek' then
 			local playerPed = PlayerPedId()
 			local coords = GetEntityCoords(playerPed)
 
